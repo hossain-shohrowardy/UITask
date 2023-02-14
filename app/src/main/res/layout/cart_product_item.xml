@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+            <ImageView
+                android:id="@+id/favourite_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/fav" />
+
+            <ImageView
+                android:id="@+id/cart_img"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_product_image" />
+
+            <TextView
+                android:id="@+id/cart_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cart_img"
+                android:layout_marginTop="5dp"
+                android:text="Green Apple"
+                android:textColor="@color/gray"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cart_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="50 tk"
+                android:textColor="@color/popular_image_background"
+                android:textSize="22sp" />
+
+
+
+
+            <Button
+                android:id="@+id/cart_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add TO cart"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/cart_price"
+                android:textColor="@color/deep_green"
+
+                />
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
